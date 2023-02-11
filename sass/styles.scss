@@ -1,0 +1,243 @@
+@use 'reset';
+@use 'navbar';
+@use 'form';
+@use 'button';
+@use 'mixinsfunc';
+
+
+//variables
+$font-stack :'Roboto Mono',
+monospace;
+$primary-color: rgba(218, 218, 218, 0.3);
+$secondary-color: #fff5fa;
+$variant-color1: #6699cc;
+$variant-color2: #000000;
+$variant-color3: rgb(244, 205, 33);
+$variant-color4: #e56a17;
+
+
+
+//Inicio: formato estilos generales
+
+html,
+body {
+    font-family: $font-stack;
+    color: $variant-color2;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include mixinsfunc.letras;
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: -2px;
+    font-weight: 500;
+
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+//Fin: formato estilos generales
+
+
+
+//Inicio: clases utilizadas
+
+.container {
+    @include mixinsfunc.contenedor;
+}
+
+.text-span {
+    color: $variant-color4;
+}
+
+//Fin: clases utilizadas
+
+
+//Inicio: Contenido de header
+
+#cont-header {
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(/assets/hero_bg.png);
+    background-size: 2850px;
+    background-position: center;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+
+    .showcase-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 20px;
+
+        &-text {
+            p {
+                font-weight: 500;
+                color: $secondary-color;
+                padding-top: 15px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .container {
+        .content {
+            padding: 0 80px;
+            margin-top: 30px;
+            text-align: center;
+
+            &-row {
+                display: flex;
+                gap: 3em;
+
+                p {
+                    color: $secondary-color;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+//Fin: Contenido de header
+
+
+
+
+//Inicio: Contenido de main
+
+#services {
+    height: 100vh;
+    background-color: $primary-color;
+    background-image: url(/assets/noun-responsive-1106197\ \(1\)\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+
+    .showcase {
+        padding-top: 50px;
+        text-align: center;
+
+        p {
+            padding: 20px 0;
+            font-weight: 500;
+        }
+
+        &-boxing {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 50px;
+        }
+    }
+}
+
+//Fin: Contenido de main
+
+
+
+
+//Inicio: Contenido de section
+
+#suscripcion {
+    height: 100vh;
+    background-image: url(/assets/mob-psycho.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: right;
+    background-position-y: bottom;
+
+    .slider {
+        padding-top: 40px;
+        text-align: center;
+        background: $primary-color;
+
+        &-row {
+            display: flex;
+            gap: 1em;
+            padding: 50px 0;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+
+            img {
+                width: 180px;
+                height: 270px;
+            }
+        }
+    }
+
+    .container {
+        padding-top: 30px;
+        text-align: center;
+
+        p {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            font-weight: 500;
+        }
+
+        form {
+            text-align: start;
+            width: 50%;
+            margin: 0 auto;
+            gap: 3em;
+
+            button {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+//Fin: Contenido de section
+
+
+
+
+//Inicio: Contenido de Footer
+
+#contact {
+    height: 100vh;
+    background: $secondary-color;
+
+    .container {
+        padding-top: 100px;
+        text-align: center;
+
+        p {
+            padding-top: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .text-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding-top: 200px;
+    }
+}
+
+//Fin: Contenido de Footer

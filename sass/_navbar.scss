@@ -1,0 +1,36 @@
+@use 'mixinsfunc';
+
+.nav {
+    overflow: auto;
+    padding: 20px 0;
+
+    &__container {
+        @include mixinsfunc.contenedor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & img {
+            width: 150px;
+        }
+
+        & ul {
+            font-size: 1em;
+            font-weight: 500;
+            list-style: none;
+            display: inline-flex;
+            gap: 1.5rem;
+
+
+            & a {
+                color: #ffffff;
+
+                &:hover {
+                    color: #ff8533;
+                    transition: all .3s ease-out;
+                }
+            }
+        }
+    }
+
+}

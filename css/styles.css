@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  overflow: auto;
+  padding: 20px 0;
+}
+.nav__container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__container img {
+  width: 150px;
+}
+.nav__container ul {
+  font-size: 1em;
+  font-weight: 500;
+  list-style: none;
+  display: inline-flex;
+  gap: 1.5rem;
+}
+.nav__container ul a {
+  color: #ffffff;
+}
+.nav__container ul a:hover {
+  color: #ff8533;
+  transition: all 0.3s ease-out;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #000;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-control {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.btn-dark {
+  background: #ff8533;
+  border: none;
+  opacity: 90%;
+  color: #000;
+}
+.btn-dark:hover {
+  opacity: 100%;
+  transition: all 0.3s ease-out;
+}
+
+html,
+body {
+  font-family: "Roboto Mono", monospace;
+  color: #000000;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 2.2rem;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-span {
+  color: #e56a17;
+}
+
+#cont-header {
+  height: 100vh;
+  background-color: #000000;
+  background-image: url(/assets/hero_bg.png);
+  background-size: 2850px;
+  background-position: center;
+  background-position-y: 100px;
+  background-repeat: no-repeat;
+}
+#cont-header .showcase-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+#cont-header .showcase-row-text p {
+  font-weight: 500;
+  color: #fff5fa;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+#cont-header .container .content {
+  padding: 0 80px;
+  margin-top: 30px;
+  text-align: center;
+}
+#cont-header .container .content-row {
+  display: flex;
+  gap: 3em;
+}
+#cont-header .container .content-row p {
+  color: #fff5fa;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#services {
+  height: 100vh;
+  background-color: rgba(218, 218, 218, 0.3);
+  background-image: url(/assets/noun-responsive-1106197\ \(1\)\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-size: 400px;
+}
+#services .showcase {
+  padding-top: 50px;
+  text-align: center;
+}
+#services .showcase p {
+  padding: 20px 0;
+  font-weight: 500;
+}
+#services .showcase-boxing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#suscripcion {
+  height: 100vh;
+  background-image: url(/assets/mob-psycho.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: right;
+  background-position-y: bottom;
+}
+#suscripcion .slider {
+  padding-top: 40px;
+  text-align: center;
+  background: rgba(218, 218, 218, 0.3);
+}
+#suscripcion .slider-row {
+  display: flex;
+  gap: 1em;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+#suscripcion .slider-row img {
+  width: 180px;
+  height: 270px;
+}
+#suscripcion .container {
+  padding-top: 30px;
+  text-align: center;
+}
+#suscripcion .container p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: 500;
+}
+#suscripcion .container form {
+  text-align: start;
+  width: 50%;
+  margin: 0 auto;
+  gap: 3em;
+}
+#suscripcion .container form button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#contact {
+  height: 100vh;
+  background: #fff5fa;
+}
+#contact .container {
+  padding-top: 100px;
+  text-align: center;
+}
+#contact .container p {
+  padding-top: 20px;
+  font-weight: 500;
+}
+#contact .text-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 200px;
+}
+
+/*# sourceMappingURL=styles.css.map */

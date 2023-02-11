@@ -1,0 +1,13 @@
+@mixin letras{
+    color: #ffffff;
+    line-height: 1.3em;
+}
+
+@mixin contenedor{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+
