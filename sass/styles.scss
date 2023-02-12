@@ -55,9 +55,6 @@ a {
     text-decoration: none;
 }
 
-//Fin: formato estilos generales
-
-
 
 //Inicio: clases utilizadas
 
@@ -68,8 +65,6 @@ a {
 .text-span {
     color: $variant-color4;
 }
-
-//Fin: clases utilizadas
 
 
 //Inicio: Contenido de header
@@ -97,6 +92,10 @@ a {
                 padding-bottom: 20px;
             }
         }
+
+        img {
+            width: 450px;
+        }
     }
 
     .container {
@@ -114,14 +113,14 @@ a {
                     font-weight: 400;
                     font-size: 15px;
                 }
+
+                img {
+                    width: 70px;
+                }
             }
         }
     }
 }
-
-//Fin: Contenido de header
-
-
 
 
 //Inicio: Contenido de main
@@ -129,9 +128,9 @@ a {
 #services {
     height: 100vh;
     background-color: $primary-color;
-    background-image: url(/assets/noun-responsive-1106197\ \(1\)\ \(1\).svg);
+    background-image: url(/assets/noun-responsive-1106197x.svg);
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 350px;
 
     .showcase {
         padding-top: 50px;
@@ -146,14 +145,14 @@ a {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding-top: 50px;
+            padding-top: 20px;
+
+            img {
+                width: 300px;
+            }
         }
     }
 }
-
-//Fin: Contenido de main
-
-
 
 
 //Inicio: Contenido de section
@@ -200,9 +199,9 @@ a {
             text-align: start;
             width: 50%;
             margin: 0 auto;
-            gap: 3em;
 
-            button {
+            a {
+                text-align: center;
                 margin-top: 20px;
                 width: 100%;
             }
@@ -210,17 +209,10 @@ a {
     }
 }
 
-//Fin: Contenido de section
-
-
-
 
 //Inicio: Contenido de Footer
 
 #contact {
-    height: 100vh;
-    background: $secondary-color;
-
     .container {
         padding-top: 100px;
         text-align: center;
@@ -229,6 +221,10 @@ a {
             padding-top: 20px;
             font-weight: 500;
         }
+
+        img {
+            width: 400px;
+        }
     }
 
     .text-row {
@@ -236,8 +232,17 @@ a {
         align-items: center;
         justify-content: center;
         gap: 2em;
-        padding-top: 200px;
+        padding: 50px 0;
+
+        &-image {
+            width: 120px;
+        }
+
+        &-image2 {
+            width: 25px;
+        }
     }
 }
 
-//Fin: Contenido de Footer
+@import 'tablet';
+@import 'mobile';

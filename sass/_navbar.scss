@@ -10,19 +10,18 @@
         align-items: center;
         justify-content: space-between;
 
-        & img {
+        img {
             width: 150px;
         }
 
-        & ul {
+        ul {
             font-size: 1em;
             font-weight: 500;
             list-style: none;
             display: inline-flex;
             gap: 1.5rem;
 
-
-            & a {
+            a {
                 color: #ffffff;
 
                 &:hover {
@@ -33,4 +32,28 @@
         }
     }
 
+
+    @media(max-width:590px) {
+        &__container {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 10px;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+
+    @media(max-width:450px) {
+        &__container {
+            gap: 25px;
+
+            ul {
+                font-size: .9em;
+                gap: .5rem;
+            }
+        }
+    }
 }

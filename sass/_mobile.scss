@@ -1,0 +1,47 @@
+@media(max-width:450px) {
+
+    //Inicio: formato estilos generales
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        letter-spacing: -3px;
+    }
+
+    h4 {
+        font-weight: 400;
+    }
+
+    p {
+        font-size: .9rem;
+        font-weight: 500;
+        line-height: 1.7em;
+    }
+
+
+    //Inicio: Contenido de header
+    #cont-header {
+        background-size: 2200px;
+        background-position-y: 135px;
+        background-position-x: -430px;
+
+        .showcase-row {
+            padding-top: 5px;
+        }
+    }
+
+
+    //Inicio: Contenido de section
+    #suscripcion {
+        background-image: none;
+
+        .container {
+            form {
+                width: 100%;
+            }
+        }
+    }
+}
