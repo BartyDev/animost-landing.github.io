@@ -71,8 +71,8 @@ a {
 
 #cont-header {
     height: 100vh;
+    background-image:url("/assets/chainsaw-man.png");
     background-color: #000000;
-    background-image: url("./assets/hero_bg.png");
     background-size: 2850px;
     background-position: center;
     background-position-y: 100px;
@@ -127,8 +127,8 @@ a {
 
 #services {
     height: 100vh;
+    background-image: url("/assets/noun-responsive-1106197x.svg");
     background-color: $primary-color;
-    background-image: url("./assets/noun-responsive-1106197x.svg");
     background-repeat: no-repeat;
     background-size: 350px;
 
@@ -159,7 +159,7 @@ a {
 
 #suscripcion {
     height: 100vh;
-    background-image: url("./assets/mob-psycho.png");
+    background-image: url("/assets/mob-psycho.png");
     background-repeat: no-repeat;
     background-size: 600px;
     background-position: right;
