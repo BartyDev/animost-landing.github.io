@@ -95,6 +95,7 @@ form .form-control {
 
 html,
 body {
+  scroll-behavior: smooth;
   font-family: "Roboto Mono", monospace;
   color: #000000;
 }
@@ -142,7 +143,7 @@ a {
 
 #cont-header {
   height: 100vh;
-  background-image: url("/assets/chainsaw-man.png");
+  background: url("/assets/chainsaw-man.png");
   background-color: #000000;
   background-size: 2850px;
   background-position: center;
@@ -184,7 +185,7 @@ a {
 
 #services {
   height: 100vh;
-  background-image: url("/assets/noun-responsive-1106197x.svg");
+  background: url("/assets/noun-responsive-1106197x.svg");
   background-color: rgba(218, 218, 218, 0.3);
   background-repeat: no-repeat;
   background-size: 350px;
@@ -209,7 +210,7 @@ a {
 
 #suscripcion {
   height: 100vh;
-  background-image: url("/assets/mob-psycho.png");
+  background: url("/assets/mob-psycho.png");
   background-repeat: no-repeat;
   background-size: 600px;
   background-position: right;
@@ -354,7 +355,7 @@ a {
   }
   #services {
     height: 550px;
-    background-image: url("/assets/noun-responsive-1106197x.svg");
+    background: url("/assets/noun-responsive-1106197x.svg");
     background-position: center;
     background-position-y: bottom;
     background-size: 200px;
