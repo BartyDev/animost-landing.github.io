@@ -280,6 +280,9 @@ a {
 
 /*========== PRIMER MEDIA QUERY ==========*/
 @media (max-width: 1435px) {
+  h1 {
+    font-size: 3em;
+  }
   #services {
     height: 800px;
     background-image: none;
@@ -302,9 +305,6 @@ a {
 @media (max-width: 1250px) {
   #cont-header .showcase-row {
     padding-top: 120px;
-  }
-  #cont-header .showcase-row-text h1 {
-    font-size: 3em;
   }
   #cont-header .showcase-row img {
     width: 250px;
@@ -423,9 +423,17 @@ a {
     width: 35px;
   }
 }
+@media (max-width: 591px) {
+  #cont-header .showcase-row {
+    padding-top: 10px;
+  }
+  #cont-header .container .content {
+    margin-top: 35px;
+  }
+}
 @media (max-width: 450px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     letter-spacing: -3px;
   }
   h2 {

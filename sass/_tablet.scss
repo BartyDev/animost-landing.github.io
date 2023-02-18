@@ -1,6 +1,11 @@
 /*========== PRIMER MEDIA QUERY ==========*/
 
 @media(max-width:1435px) {
+    
+        h1 {
+            font-size: 3em;
+        }
+    
 
     //Inicio: Contenido de main
 
@@ -48,12 +53,6 @@
     #cont-header {
         .showcase-row {
             padding-top: 120px;
-
-            &-text {
-                h1 {
-                    font-size: 3em;
-                }
-            }
 
             img {
                 width: 250px;
@@ -240,6 +239,20 @@
 
             &-image2 {
                 width: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width:591px) {
+    #cont-header {
+        .showcase-row {
+            padding-top: 10px;
+        }
+
+        .container {
+            .content {
+                margin-top: 35px;
             }
         }
     }
